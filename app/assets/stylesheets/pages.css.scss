@@ -1,0 +1,41 @@
+main {
+	background-image: image-url('coding-image.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+// home page header and paragraph
+
+.page-header {
+	font-size: 1.2rem;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.index-p {
+	background-color: #fff;
+	border: #202020 3px solid; // change colour after to #008895 for dark mode
+	text-decoration: none;
+	color: #202020;
+	margin: 25px;
+	padding: 10px;
+	font-size: 1rem;
+	text-align: center;
+	opacity: 0.8;
+}
+.index-p p {
+	margin-top: 10px;
+}
+
+.btn {
+	background-color: #202020; // change colour after to #008895 for dark mode
+	text-decoration: none;
+}
+
+.btn a {
+	color: #fff;
+	text-decoration: none;
+}
+// hover
+
+// change hover colour of button on the home page
