@@ -13,10 +13,10 @@ main {
 }
 
 .index-p {
-	background-color: #fff;
-	border: #202020 3px solid; // change colour after to #008895 for dark mode
+	background-color: var(--white);
+	border: var(--black) 3px solid; // change colour after to light-blue for dark mode
 	text-decoration: none;
-	color: #202020;
+	color: var(--black);
 	margin: 25px;
 	padding: 10px;
 	font-size: 1rem;
@@ -28,14 +28,48 @@ main {
 }
 
 .btn {
-	background-color: #202020; // change colour after to #008895 for dark mode
+	background-color: var(--black); // change colour after to light-blue for dark mode
 	text-decoration: none;
 }
 
 .btn a {
-	color: #fff;
+	color: var(--white);
 	text-decoration: none;
 }
+
 // hover
 
-// change hover colour of button on the home page
+.btn:hover {
+	color: var(--light-blue);
+}
+
+// dark mode
+
+@media (prefers-color-scheme: dark) {
+	.index-p {
+		background-color: var(--black);
+		border: var(--light-blue) 3px solid;
+		text-decoration: none;
+		color: var(--white);
+		margin: 25px;
+		padding: 10px;
+		font-size: 1rem;
+		text-align: center;
+		opacity: 0.8;
+	}
+
+	.btn {
+		background-color: var(--light-blue);
+	}
+	
+	.btn a {
+		color: var(--black);
+		text-decoration: none;
+	}
+	
+	// hover
+	
+	.btn:hover {
+		color: var(--light-blue);
+	}
+}
